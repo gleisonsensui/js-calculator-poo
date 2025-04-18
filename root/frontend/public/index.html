@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/stylesheet.css" />
     <title>POO - Calculator</title>
-</head>
-<body>
-    <main class="container">
-        <section class="display">
-            
+  </head>
+  <body>
+    <main id="calculator" class="container">
+      <section id="screen-container">
+        <div id="upper-display">0</div>
+        <div id="result">0</div>
+      </section>
 
+      <section id="buttons-container">
+        <section class="btn-container">
+            <div class="btn" id="ac-btn">AC</div>            
+            <div class="btn" id="ce-btn">CE</div>            
+            <div class="btn" id="porcento-btn">%</div>
+            <div class="btn" id="division-btn">&#247</div>
         </section>
-        <section class="">
-
+        <section class="btn-container">
+            <div class="btn" >1</div>
+            <div class="btn" >2</div>
+            <div class="btn" >3</div>
+            <div class="btn" id="multiplication-btn">X</div>
         </section>
-        <section class="">
-
+        <section class="btn-container">
+            <div class="btn" >4</div>
+            <div class="btn" >5</div>
+            <div class="btn" >6</div>
+            <div class="btn" id="sum-btn">+</div>
         </section>
-        <section class="">
-
+        <section class="btn-container">
+            <div class="btn" id="">7</div>
+            <div class="btn" id="">8</div>
+            <div class="btn" id="">9</div>
+            <div class="btn" id="subtraction-btn">-</div>
         </section>
-    </main>    
-</body>
+        <section class="btn-container">
+            <div class="btn" id="zero-btn">0</div>
+            <div class="btn" id="equal-btn">=</div>
+        </section>
+      </section>
+      
+    </main>
+    <script src="scripts/Calculator.js"></script>
+  </body>
 </html>
