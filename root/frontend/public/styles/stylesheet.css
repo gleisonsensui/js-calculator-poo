@@ -1,0 +1,99 @@
+:root {
+  --background-color-gray-3: #545454;
+  --background-color-gray-2: #7a7a7a;
+  --background-color-gray-1: #bebebe;
+  --background-cursor-color: #6c63ff;
+}
+
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+body {
+  background-color: var(--background-color-gray-2);
+}
+
+/* Calculadora */
+#calculator {
+  background-color: var(--background-color-gray-1);
+  width: 400px;
+  height: 420px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 30px 0 50px 0;
+}
+
+#screen-container {
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 258px;
+  height: 70px;
+  border: 1px solid #354357;
+  text-align: right;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#upper-display,
+#result-display {
+  float: right;
+  color: #fff;
+}
+
+#result-display {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 1.8rem;
+  clear: both;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 65px;
+  height: 50px;
+  margin: 0 7px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--background-color-gray-3);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--background-cursor-color);
+}
+
+#zero-btn,
+#equal-btn {
+  width: 120px;
+}
+
+#dot-btn,
+#zero-btn,
+#equal-btn,
+#sum-btn,
+#subtraction-btn,
+#multiplication-btn,
+#division-btn,
+#ce-btn,
+#ac-btn,
+#porcento-btn {
+  font-weight: 300;
+  font-size: 20px;
+}
