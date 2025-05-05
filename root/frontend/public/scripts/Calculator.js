@@ -1,9 +1,9 @@
-import displayFactory from './DisplayFactory';
+import DisplayFactory from './DisplayFactory';
 
 export default class Calculator {
   constructor() {
-    this.upperValue = displayFactory.getUpperValue()
-    this.resultValue = displayFactory.getResultValue()
+    this.upperValue = DisplayFactory.getUpperValue()
+    this.resultValue = DisplayFactory.getResultValue()
     this.reset = 0;
     this.rangeResult = [];
   }
@@ -16,11 +16,22 @@ export default class Calculator {
   }
 
   pressBtn() {
-    let input = this.textContent
-    displayFactory.checkLastDigit();
-    displayFactory.updateUpperValue(input)
+    let input = this.textContent  
+
+    let upperArray = DisplayFactory.getUpperValue().split(' ')
+
+    DisplayFactory.btnAction(input, upperArray);
+
+    console.log(upperArray)
     console.log(input)
+    
   }
+
+  clearAll() {
+    DisplayFactory.resultDisplay.textContent = '0';
+    DisplayFactory.upperDisplay.textContent = '0';
+  }
+
 
   showDisplay() {
     console.log(this.upperValue)
